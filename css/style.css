@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[class*="col-"] {
+  height: 120px;
+  border: 1px solid black;
+
+}
+
+.container {
+  background-color: #f5c3cc;
+}
+
+
+
+
+
+/* ----classe debug poi da cancellare */
+.debug {
+  /* border: 1px solid black; */
+}
