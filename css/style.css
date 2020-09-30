@@ -4,26 +4,35 @@
   padding: 0;
 }
 
-[class*="col-"] {
-  height: 120px;
-  border: 1px solid black;
+.debug {
+  max-width: 1170px;
 
 }
 
-.container {
+.debug [class*="col-"] {
+  height: 120px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
   background-color: #f5c3cc;
+  position: relative;
+}
+
+.debug .container {
+  height: 100%;
 }
 
 /* seleziono solo le celle nested */
-[class*="col-"] > [class*="col-"] {
+  .debug [class*="col-"] > .container > [class*="col-"] {
   background-color: #e18482;
-  /* border: 1px solid white; */
-  text-align: center;
-  line-height: 120px;
+  border: 1px solid white;
+  height: 100%;
+
 }
 
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
-
-/* ----classe debug poi da cancellare */
-.debug {
 }
