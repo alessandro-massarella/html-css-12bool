@@ -14,11 +14,16 @@
   background-color: #f5c3cc;
 }
 
-
+/* seleziono solo le celle nested */
+[class*="col-"] > [class*="col-"] {
+  background-color: #e18482;
+  /* border: 1px solid white; */
+  text-align: center;
+  line-height: 120px;
+}
 
 
 
 /* ----classe debug poi da cancellare */
 .debug {
-  /* border: 1px solid black; */
 }
